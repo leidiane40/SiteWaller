@@ -1,5 +1,4 @@
 
-=======
 <?php
 if (isset($_GET['image'])) {
     $image = $_GET['image'];
@@ -32,4 +31,4 @@ if (isset($_GET['image'])) {
 } else {
     echo json_encode(['success' => false, 'message' => 'Parâmetro da imagem ausente']);
 }
->>>>>>> 8db5931 (Commit inicial)
+
