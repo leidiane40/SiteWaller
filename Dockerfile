@@ -1,4 +1,4 @@
-=======
+
 # Use a imagem base do PHP com Apache
 FROM php:7.4-apache
 
@@ -10,4 +10,4 @@ RUN a2enmod rewrite
 
 # Exponha a porta 80
 EXPOSE 80
->>>>>>> 8db5931 (Commit inicial)
+
