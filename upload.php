@@ -1,5 +1,5 @@
 
-=======
+
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $target_dir = "uploads/";
@@ -31,4 +31,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
->>>>>>> 8db5931 (Commit inicial)
+
