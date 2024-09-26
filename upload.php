@@ -3,7 +3,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     // Define o diretório de destino para onde o arquivo será enviado
-    $target_dir = "C:/Users/leidi_vtpe2bu/OneDrive/Desktop/projetogit/uploads";
+    $target_dir = "uploads/";
     
     // Cria o caminho completo do arquivo de destino, unindo o diretório de destino e o nome do arquivo enviado
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
