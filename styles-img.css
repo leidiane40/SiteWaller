@@ -1,0 +1,245 @@
+=======
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'outfit' sans-serif;
+}
+body{
+    /*height: 100vh; altura*/
+    /*display: flex;*/
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 48, 48);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+nav.menu-lateral{
+        width: 60px;
+        height: 100%;
+        background-color: black;
+        padding: 40px 0 40px 1%;
+        box-shadow: 3px 0 0 rgb(99, 179, 124); /*horizontal, vertical, espalhamento*/
+        position: fixed;
+        top: o;
+        left: o;
+        overflow: hidden;
+        transition: .2s;
+        
+    }
+
+nav.menu-lateral:hover{
+        width: 300px;
+    }
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 5px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+     background: rgb(99, 179, 124);
+}
+
+ul li.item-menu{
+    transition: .1s;
+}
+ul li.ativo{
+    background-color:rgb(99, 179, 124); ;
+}
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px 4%;
+    display: flex; /*espaçamento entre os itens do side bar*/
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 40px; /* distancia entre o icone e a escrita*/
+}
+ ul li.item-menu a .icon >i{
+    font-size: 20px;
+}    
+li{
+margin: 5px;
+text-align:left;
+}
+a{
+color: white;
+}
+h1{
+    font-weight: 200;
+    font-family: 'montserrat';
+    color: white;
+    padding: 10px 90px 0; 
+    margin-right: 100px; /* Espaço entre o formulário e a galeria */
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: 'montserrat';        
+    justify-content:space-between;
+    padding: 50px 90px 20px;
+    margin-right: 100px; /* Espaço entre o formulário e a galeria */
+    }
+
+.highlight{
+    color: rgb(99, 179, 124);
+    justify-content: space-between;
+}
+  
+.container {
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 20px; /* Espaço interno do contêiner */
+    
+}
+
+.content {
+    display: flex; /* Utiliza flexbox para organizar o layout */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+} 
+.form-section {
+    background-color: rgb(48, 48, 48);
+    border-radius: 70px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+        }
+
+
+form label {
+    display: block; /* Faz com que os rótulos ocupem toda a largura disponível */
+    margin: 10px 0 5px; /* Adiciona margem acima e abaixo do rótulo */
+    font-size: 20px; /* Define o tamanho da fonte do rótulo */
+    font-family: 'Montserrat';
+    }
+input[type="text"], input[type="file"], input[type="submit"] {
+     display: block; /* Faz com que os campos de entrada ocupem toda a largura disponível */
+    margin: 10px 0; /* Adiciona margem acima e abaixo de cada campo */
+    font-size: 16px; /* Define o tamanho da fonte dos campos */
+    padding: 10px; /* Adiciona preenchimento interno aos campos */
+    width: 100%; /* Define a largura dos campos como 100% do elemento pai */
+    max-width: 400px; /* Define uma largura máxima de 400px para os campos */
+    }
+input[type="text"], input[type="file"] {
+    border: 1px solid #ddd; /* Adiciona uma borda cinza clara aos campos de texto e arquivo */
+    border-radius: 20px; /* Arredonda os cantos dos campos de entrada */
+}
+input[type="submit"] {
+    background-color: white; /* Define a cor de fundo do botão de envio */
+    color: black; /* Define a cor do texto do botão como preta */
+    font-family: 'Montserrat';
+    font-size: 20px;
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    border-radius: 20px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+    
+input[type="submit"]:hover {
+    background-color: rgb(99, 179, 124); /* Muda a cor de fundo do botão ao passar o mouse sobre ele */
+}
+.gallery-section{
+    width: 55%;
+}
+        
+/* Estilizando a galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+    gap: 20px;
+    margin: 0;
+}
+    
+.gallery-item {
+    background-color: white;
+    border: 2px solid #c8e6c9;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+    
+.gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+    
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    
+.gallery-item img:hover {
+    transform: scale(1.1);
+ }
+    
+.gallery-item {
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.gallery-item .controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+    
+.gallery-item .controls button {
+    margin-bottom: 1px;
+    background-color: white;
+    border: 1px solid #4caf50;
+    color: #4caf50;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+    
+.gallery-item .controls button:hover {
+    background-color: #4caf50;
+    color: white;
+}
+    
+/* Estilos responsivos */
+@media (max-width: 768px) {
+.gallery-item {
+        width: 90%;
+        margin: 0 auto;
+        }
+}
+    
+    
+    
+>>>>>>> 8db5931 (Commit inicial)
