@@ -1,5 +1,5 @@
 
-=======
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -53,4 +53,4 @@ rel='stylesheet' type='text/css'>
     </header>
 </body>
 </html>
->>>>>>> 8db5931 (Commit inicial)
+
