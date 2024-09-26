@@ -16,6 +16,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Verifica se o arquivo é realmente uma imagem
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    // Verifica se o diretório existe, caso contrário, cria-o
+if (!file_exists($target_dir)) {
+    mkdir($target_dir, 0777, true); // Cria o diretório com permissões de leitura e escrita
+}
+
     if ($check !== false) {
         // Se o arquivo é uma imagem, tenta salvá-lo no servidor
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
