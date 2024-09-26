@@ -1,5 +1,3 @@
-
-
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $target_dir = "/var/www/html/uploads/";
