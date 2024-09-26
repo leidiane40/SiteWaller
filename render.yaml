@@ -1,5 +1,4 @@
 
-=======
 services:
   - type: web
     name: php-app
@@ -10,4 +9,3 @@ services:
     envVars:
       - key: PORT
         value: 80
->>>>>>> 8db5931 (Commit inicial)
